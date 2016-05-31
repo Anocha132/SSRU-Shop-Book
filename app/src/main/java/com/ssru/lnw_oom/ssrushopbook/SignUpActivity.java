@@ -22,7 +22,7 @@ public class SignUpActivity extends AppCompatActivity {
     private EditText nameEditText, surnamEditText,
             userEditText, passwordEditText;
     private String nameString, surnameString, userString, passString;
-    private static final String urlUpload = "";
+    private static final String urlUpload = "http://swiftcodingthai.com/ssru/add_user_master.php";
 
 
     @Override
@@ -70,7 +70,7 @@ public class SignUpActivity extends AppCompatActivity {
                 .add("Password", passString)
                 .build();
         Request.Builder builder = new Request.Builder();
-        Request request = builder.url("http://swiftcodingthai.com/ssru/add_user_master.php").post(requestBody).build();
+        Request request = builder.url(urlUpload).post(requestBody).build();
         Call call = okHttpClient.newCall(request);
         call.enqueue(new Callback() {
             @Override
