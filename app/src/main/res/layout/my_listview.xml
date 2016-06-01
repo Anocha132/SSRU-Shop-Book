@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    app:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_listview">
+
+    <ImageView
+        android:src="@android:drawable/presence_audio_busy"
+        android:layout_width="@dimen/iconbook"
+        android:layout_height="@dimen/heightbook"
+        android:id="@+id/imageView2"
+        android:layout_weight="1"
+        android:layout_margin="15dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            android:textColor="?android:attr/colorFocusedHighlight"
+            android:textSize="@dimen/h2" />
+
+        <TextView
+            android:text="250 BTH."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10"
+            android:textColor="?android:attr/colorFocusedHighlight"
+            android:textSize="50sp" />
+    </LinearLayout>
+</LinearLayout>
